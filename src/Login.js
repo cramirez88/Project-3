@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Form, Button, FormGroup, Label, Input, Container } from "reactstrap";
+import { Form, Button, FormGroup, Label, Input } from "reactstrap";
 import Facebook from "./components/Facebook";
 import streetball from "./assets/streetball.jpg"
 
@@ -9,7 +9,7 @@ export const Login = () => {
     
     return(
       
-    <Container className="backgro">
+    <div className="bodylogin">    
       <Form className="login-form">
 
         <h1 className="text-center">
@@ -42,8 +42,8 @@ export const Login = () => {
         </div>
 
       </Form>
+    </div>
     
-    </Container>
       
     
   );
