@@ -3,13 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Form, Button, FormGroup, Label, Input } from "reactstrap";
 import Facebook from "./components/Facebook";
-import streetball from "./assets/streetball.jpg"
 
 export const Login = () => {
     
     return(
       
-    <div className="bodylogin">    
+    <div className="mycontainer">
+      <div className="logindiv">    
       <Form className="login-form">
 
         <h1 className="text-center">
@@ -33,15 +33,19 @@ export const Login = () => {
         <div className="text-center pt-3">
           Or continue with Facebook
         </div>
-        <Facebook className="mt-3 mb-3"/>
+
+        <div className="facebooklogin">
+            <Facebook/>
+        </div>
 
         <div className="text-center">
           <a href="/sign-up">Sign Up</a>
           <span className="p-2">|</span>
           <a href="/sign-up">Forgot Password</a>
         </div>
-
+        
       </Form>
+      </div>  
     </div>
     
       

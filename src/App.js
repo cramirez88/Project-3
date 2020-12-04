@@ -17,22 +17,22 @@ import Facebook from './components/Facebook';
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Router>
+      // <React.Fragment>
+          <Router>
           <NavigationBar />
           {/* <Map /> */}
-          <Layout>
             <Switch>
               <Route exact path="/" component={Login} />
               <Route exact path="/login" component={Login} />
+              <Layout>
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/contact" component={Contact} />
               <Route component={NoMatch} />
+              </Layout>
             </Switch>
-          </Layout>
         </Router>
-      </React.Fragment>
+      // </React.Fragment>
     );
   }
 }
