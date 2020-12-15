@@ -8,7 +8,6 @@ const session = require('express-session');
 const passport = require('./passport');
 
 
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 
