@@ -47,7 +47,7 @@ mongoose.connect( process.env.MONGODB_URI || "mongodb://localhost/pickup02"),
   useCreateIndex: true,
   useFindAndModify: false
 }
-q
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, './client/build')));

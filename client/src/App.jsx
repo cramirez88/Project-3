@@ -1,10 +1,15 @@
-import React from 'react'
-import Sidebar from './components/Sidebar'
-import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import PickUps from './components/PickUps';
-import Map2 from './components/Map2';
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Home from "./components/Home";
+import PickUps from "./components/PickUps";
+import Map2 from "./components/Map2";
 
 function App() {
   return (
